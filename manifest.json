@@ -1,0 +1,19 @@
+{
+  "name": "X-blocker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "This extension blocks all the X's on the page",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "background.html"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

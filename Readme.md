@@ -4,7 +4,7 @@
 
 ```json
 {
-  "name": "My Extension",
+  "name": "X-blocker",
   "version": "1.0",
   "manifest_version": 2,
   "description": "My first extension!",
