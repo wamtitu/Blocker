@@ -3,12 +3,30 @@
   "version": "1.0",
   "manifest_version": 2,
   "description": "This extension blocks all the X's on the page",
-  "content script":{
-    "matches": ["<all_urls>"]
-  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "background.js"
+      ]
+    }
+  ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
   },
   "browser_action": {
     "default_icon": "icon.png",

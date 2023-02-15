@@ -1,3 +1,4 @@
+chrome.runtime.onInstalled.addListener(function() {
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
     // Check if the URL matches any of the pornographic websites in the blacklist
@@ -9,3 +10,4 @@ chrome.webRequest.onBeforeRequest.addListener(
   {urls: ["<all_urls>"]},
   ["blocking"]
 );
+});
