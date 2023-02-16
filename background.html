@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>X-BLocker</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>X-BLocker</title>
+</head>
+
+<body>
+  <h1>X-BLocker</h1>
+  <!-- <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          var blocklist = JSON.parse(xhr.responseText);
+          console.log(blocklist); // log the parsed blocklist data
+        } else {
+          console.error('Error retrieving blocklist: status', xhr.status);
+        }
+      }
+    };
+    xhr.open("GET", chrome.extension.getURL("blocklist.json"), true);
+    xhr.send();
+
+  </script> -->
+</body>
+
+</html>
+
 </html>
